@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  margin-top: 2vw;
+  align-items: center;
+}
+
+#employee {
+  margin-left: 2vw;
+  font-size: 2vw;
+}
+
+#modifyButton {
+  font-size: 1.5vw;
+  position: absolute;
+  right: 3vw;
+}
+
+#deleteButton {
+  font-size: 1.5vw;
+  position: absolute;
+  right: 13vw;
+}
+
+#image {
+  margin-left: 3vw;
+  width: 7vw;
+  heigth: auto;
+  border-radius: 2vw;
+}
