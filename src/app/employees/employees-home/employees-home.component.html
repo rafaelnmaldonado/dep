@@ -1,28 +1,35 @@
-<div>
-  <span id="title">Employees</span>
+<span id="title">Employees</span>
+<select id="select" class="ui right pointing dropdown">
+  <option value="">All departments</option>
+  <option value="0">Auditing</option>
+  <option value="1">Development</option>
+</select>
 
-</div>
-<a routerLink="/dep">
+<a id="item" routerLink="/dep">
   <div class="ui menu">
     <img id="image" src="assets/default-icon.png">
-    <span id="employee">Rafael Nutti Maldonado</span>
-    <button routerLink="/abluble" id="modifyButton" class="ui primary button">
+    <span id="text">
+      Giovanna M.
+    </span>
+    <a routerLink="/" id="modifyButton" class="ui primary button">
       Modify
-    </button>
-    <button id="deleteButton" class="ui button">
+    </a>
+    <a routerLink="/" id="deleteButton" class="ui button">
       Delete
-    </button>
+    </a>
   </div>
 </a>
-<a routerLink="/dep">
+<a id="item" routerLink="/dep">
   <div class="ui menu">
     <img id="image" src="assets/default-icon.png">
-    <span id="employee">Rafael Nutti Maldonado</span>
-    <button routerLink="/abluble" id="modifyButton" class="ui primary button">
+    <span id="text">
+      Rafael M.
+    </span>
+    <a routerLink="/" id="modifyButton" class="ui primary button">
       Modify
-    </button>
-    <button id="deleteButton" class="ui button">
+    </a>
+    <a routerLink="/" id="deleteButton" class="ui button">
       Delete
-    </button>
+    </a>
   </div>
 </a>
