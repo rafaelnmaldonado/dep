@@ -6,12 +6,3 @@
   position: absolute;
   right: 1vw;
 }
-
-#image {
-  margin-left: 0.5vw;
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
-  width: 4vw;
-  height: auto;
-  border-radius: 100vw;
-}

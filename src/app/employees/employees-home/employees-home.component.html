@@ -5,31 +5,8 @@
   <option value="1">Development</option>
 </select>
 
-<a id="item" routerLink="/dep">
-  <div class="ui menu">
-    <img id="image" src="assets/default-icon.png">
-    <span id="text">
-      Giovanna M.
-    </span>
-    <a routerLink="/" id="modifyButton" class="ui primary button">
-      Modify
-    </a>
-    <a routerLink="/" id="deleteButton" class="ui button">
-      Delete
-    </a>
-  </div>
-</a>
-<a id="item" routerLink="/dep">
-  <div class="ui menu">
-    <img id="image" src="assets/default-icon.png">
-    <span id="text">
-      Rafael M.
-    </span>
-    <a routerLink="/" id="modifyButton" class="ui primary button">
-      Modify
-    </a>
-    <a routerLink="/" id="deleteButton" class="ui button">
-      Delete
-    </a>
-  </div>
-</a>
+<app-employee
+  *ngFor = "let employee of employees"
+  [name] = "employee.name"
+  [dep] = "employee.dep"
+></app-employee>

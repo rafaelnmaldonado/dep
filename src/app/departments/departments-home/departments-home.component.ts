@@ -6,6 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./departments-home.component.css']
 })
 export class DepartmentsHomeComponent implements OnInit {
+  deps = [
+    {
+      name: 'Audit',
+      abb: 'ADT'
+    },
+    {
+      name: 'Development',
+      abb: 'DEV'
+    }
+  ];
 
   constructor() { }
 

@@ -1,34 +1,7 @@
 <span id="title">Departments</span>
 
-<a id="item" routerLink="/employees">
-  <div class="ui menu">
-    <span id="abbreviation">
-      ADT
-    </span>
-    <span id="text">
-      Audit
-    </span>
-    <a routerLink="/" id="modifyButton" class="ui primary button">
-      Modify
-    </a>
-    <a routerLink="/" id="deleteButton" class="ui button">
-      Delete
-    </a>
-  </div>
-</a>
-<a id="item" routerLink="/employees">
-  <div class="ui menu">
-    <span id="abbreviation">
-      DEV
-    </span>
-    <span id="text">
-      Development
-    </span>
-    <a routerLink="/" id="modifyButton" class="ui primary button">
-      Modify
-    </a>
-    <a routerLink="/" id="deleteButton" class="ui button">
-      Delete
-    </a>
-  </div>
-</a>
+<app-department
+  *ngFor = "let dep of deps"
+  [name] = "dep.name"
+  [abb] = "dep.abb"
+></app-department>
